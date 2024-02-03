@@ -1,3 +1,5 @@
+import viaduct from "../viaduct.jpg"
+import { Image } from "@unpic/react"
 export function headers({
   loaderHeaders,
   parentHeaders,
@@ -19,6 +21,7 @@ export default function Index() {
   return (
     <main style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <h1>Welcome to Remix</h1>
+      <Image src={viaduct} alt="Viaduct" width={800} height={600} cdn="netlify"/>
       <ul>
         <li>
           <a
